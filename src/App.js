@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+// Components
+import CarRotation from './components/CarRotation/CarRotation'
+import AccordionCard from './components/AccordionCard/AccordionCard'
+import Filter from './components/Filter/Filter'
+import Inputs from './components/Inputs/Inputs'
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ height:'100vh' }} >
+        <CarRotation />
+        <AccordionCard />
+        <Filter />
+        <Inputs />
+      </div>
+    </>
   );
 }
 
